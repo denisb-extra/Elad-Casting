@@ -1,0 +1,139 @@
+$tab-w: 1200px;
+$mob-w: 920px;
+$small-w: 500px;
+
+@mixin border {
+	$red: random(256)-1;
+	$green: random(256)-1;
+	$blue: random(256)-1;
+ 	border: 1px solid red;
+ 	border-color: rgb($red, $green, $blue);
+}
+
+@mixin placeholder-color($color) {
+	&::-webkit-input-placeholder { /* WebKit browsers */
+	  color: $color;
+	}
+	&:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	  color: $color;
+	}
+	&::-moz-placeholder { /* Mozilla Firefox 19+ */
+	  color: $color;
+	}
+	&:-ms-input-placeholder { /* Internet Explorer 10+ */
+	  color: $color;
+	}
+}
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Heebo:300,400,500,700,800,900');
+
+@mixin f-l {
+	font-family: 'Heebo', sans-serif;
+	font-weight: 300;
+}
+
+@mixin f-r {
+	font-family: 'Heebo', sans-serif;
+	font-weight: normal;
+	font-weight: 400;
+}
+
+@mixin f-m {
+	font-family: 'Heebo', sans-serif;
+	font-weight: medium;
+	font-weight: 500;
+}
+
+@mixin f-b {
+	font-family: 'Heebo', sans-serif;
+	font-weight: 700;
+}
+
+@mixin f-xb {
+	font-family: 'Heebo', sans-serif;
+	font-weight: 800;
+}
+
+@mixin f-bl {
+	font-family: 'Heebo', sans-serif;
+	font-weight: 900;
+}
+
+/* /Fonts */
+
+
+
+
+/* Global */
+html {
+	margin: 0 !important;
+	overflow-x: hidden;
+	@include f-r;
+	padding: 0 50px;
+	background: #f1f1f4;
+
+	@media only screen and (max-width : 1300px) {
+		padding: 0 25px;
+	}
+	@media only screen and (max-width : 1000px) {
+		padding-top: 45px;
+	}
+
+	@media only screen and (max-width : 700px) {
+		padding: 0 10px;
+		padding-top: 45px;
+	}
+}
+body {
+	position: relative;
+	margin: 0;
+  	background: #f1f1f4;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+	direction: rtl;
+}
+
+p {
+    margin: 0;
+}
+ul {
+	-webkit-padding-start: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+section {
+	width: 100%;
+	max-width: 1920px;
+	margin: auto;	
+	overflow: hidden;
+	background: #fff;
+}
+
+.section-inner {
+	max-width: 1640px;
+	padding: 0 20px;
+	width: 100%;
+	margin: auto;
+
+	&.narrow {
+		max-width: 1406px;
+	}
+	@media only screen and (max-width : 700px) {
+		padding: 0 10px;
+	}
+}
+
+
+@import 'index';
+@import 'inner';
+//@import 'plugins';
