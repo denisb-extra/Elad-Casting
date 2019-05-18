@@ -1,6 +1,7 @@
 /* ---------------------- header ---------------------- */
 header {
 	background: #fff;
+	
 	.header-inner {
 		display: flex;
 		justify-content: space-between;
@@ -1277,29 +1278,33 @@ footer {
 				}
 				.content {
 					margin-top: 15px;
-				}
-				ul {
-					
-					li {
-						margin-top: 5px;
-						a {
-							@include f-r;
-							font-size: 17px;
-							color: #2c2c2c;
-							transition: 0.5s;
-							&:hover {
-								color: #EAC682;
+					a {
+						color: #E9C37B;
+					}
+				
+					ul {
+						
+						li {
+							margin-top: 5px;
+							a {
+								@include f-r;
+								font-size: 17px;
+								color: #2c2c2c;
+								transition: 0.5s;
+								&:hover {
+									color: #EAC682;
+								}
 							}
 						}
 					}
-				}
-				p {
-					@include f-r;
-					font-size: 17px;
-					color: #2c2c2c;
-					margin-top: 5px;
-					strong {
-						@include f-m;
+					p {
+						@include f-r;
+						font-size: 17px;
+						color: #2c2c2c;
+						margin-top: 5px;
+						strong {
+							@include f-m;
+						}
 					}
 				}
 			
