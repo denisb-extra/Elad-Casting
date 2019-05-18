@@ -89,6 +89,13 @@ header {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
+    header .part-left .button-lang {
+      font-family: 'Heebo', sans-serif;
+      font-weight: normal;
+      font-weight: 400;
+      font-size: 17px;
+      color: #2e2d2d;
+      margin-left: 10px; }
     header .part-left .buttons {
       margin-left: 15px; }
       header .part-left .buttons .button {
@@ -689,18 +696,18 @@ section.about-index {
     transition: 0.5s; }
     section.about-index .part-text .button:hover {
       color: #eac682; }
-  section.about-index .part-text .icons {
+  section.about-index .icons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-top: 45px; }
-    section.about-index .part-text .icons .icon {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 75px; }
+    section.about-index .icons .icon {
       text-align: center;
-      margin: 0 15px; }
-      section.about-index .part-text .icons .icon .text {
+      margin: 0 5%; }
+      section.about-index .icons .icon .text {
         font-family: 'Heebo', sans-serif;
         font-weight: 700;
         font-size: 17px;
@@ -719,10 +726,10 @@ section.about-index {
         margin-top: 90px; }
         section.about-index .part-slider .slider {
           width: 140%; }
-      section.about-index .part-text .icons .icon .text {
+      section.about-index .icons .icon .text {
         font-size: 15px;
         line-height: 18px; }
-      section.about-index .part-text .icons .icon .image img {
+      section.about-index .icons .icon .image img {
         max-width: 70px; } }
   @media only screen and (max-width: 800px) {
     section.about-index .parts {
@@ -747,19 +754,19 @@ section.about-index {
       font-size: 15px;
       padding: 5px 15px;
       margin-top: 20px; }
-    section.about-index .part-text .icons {
+    section.about-index .icons {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       font-size: 0;
       margin-top: 10px; }
-      section.about-index .part-text .icons .icon {
+      section.about-index .icons .icon {
         width: 50%;
         margin: 0;
         margin-top: 20px; }
-        section.about-index .part-text .icons .icon .text {
+        section.about-index .icons .icon .text {
           font-size: 15px;
           line-height: 18px; }
-        section.about-index .part-text .icons .icon .image img {
+        section.about-index .icons .icon .image img {
           max-width: 70px; } }
 
 /* --------------------- /Section about-index ---------------------- */
@@ -1879,6 +1886,163 @@ section.product-single {
           margin-right: 3%; } }
 
 /* ---------------------- /Section product-single ---------------------- */
+/* ---------------------- Section pteam ---------------------- */
+section.team {
+  padding-top: 100px;
+  padding-bottom: 80px; }
+  section.team .part-top {
+    text-align: center;
+    border: 5px solid #e9c37b;
+    border-bottom: none;
+    max-width: 1233px;
+    margin: auto;
+    padding: 45px; }
+    section.team .part-top .title {
+      font-family: 'Heebo', sans-serif;
+      font-weight: 800;
+      font-size: 32px;
+      color: #333333; }
+    section.team .part-top .subtitle {
+      font-family: 'Heebo', sans-serif;
+      font-weight: normal;
+      font-weight: 400;
+      font-size: 17px;
+      color: #231f20; }
+  section.team .part-bottom {
+    text-align: center;
+    border: 5px solid #e9c37b;
+    border-top: none;
+    max-width: 1233px;
+    margin: auto;
+    padding: 45px;
+    position: relative; }
+    section.team .part-bottom .button {
+      display: inline-block;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      bottom: -30px;
+      font-family: 'Heebo', sans-serif;
+      font-weight: 700;
+      font-size: 17px;
+      color: #fff;
+      background: #2c2c2c;
+      padding: 15px 25px;
+      -webkit-transition: 0.5s;
+      transition: 0.5s; }
+      section.team .part-bottom .button:hover {
+        color: #eac682; }
+  section.team .boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 0;
+    margin: -30px; }
+    section.team .boxes .box {
+      width: 33.33%;
+      margin: 0;
+      padding: 30px;
+      display: block;
+      position: relative;
+      overflow: hidden; }
+      section.team .boxes .box .inner {
+        overflow: hidden;
+        position: relative; }
+      section.team .boxes .box .image {
+        padding-bottom: 100%;
+        overflow: hidden;
+        width: 100%; }
+        section.team .boxes .box .image img {
+          position: absolute;
+          width: 100%;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+                  transform: translateX(-50%); }
+      section.team .boxes .box .caption {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        background: rgba(44, 44, 44, 0.9);
+        padding: 0 40px;
+        -webkit-transition: 0.5s;
+        transition: 0.5s; }
+        section.team .boxes .box .caption .title {
+          font-family: 'Heebo', sans-serif;
+          font-weight: 800;
+          font-size: 24px;
+          color: #ebc782;
+          margin-top: 30%;
+          -webkit-transition: 0.5s;
+          transition: 0.5s;
+          position: relative; }
+        section.team .boxes .box .caption .short {
+          font-family: 'Heebo', sans-serif;
+          font-weight: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 22px;
+          color: #fff;
+          margin-top: 5px;
+          -webkit-transition: 0.5s;
+          transition: 0.5s;
+          margin-top: 15px; }
+      section.team .boxes .box:hover .caption {
+        opacity: 1; }
+        section.team .boxes .box:hover .caption .title {
+          margin-top: 20%; }
+        section.team .boxes .box:hover .caption .short {
+          opacity: 1;
+          margin-top: 10px; }
+  @media only screen and (max-width: 1300px) {
+    section.team {
+      padding-bottom: 30px;
+      padding-top: 50px; }
+      section.team .boxes {
+        margin: -8px; }
+        section.team .boxes .box {
+          padding: 8px; }
+          section.team .boxes .box .caption {
+            padding: 0 20px; }
+            section.team .boxes .box .caption .title {
+              font-size: 20px;
+              margin-top: 2%; }
+            section.team .boxes .box .caption .short {
+              font-size: 16px;
+              line-height: 18px; } }
+  @media only screen and (max-width: 1000px) {
+    section.team {
+      padding-top: 35px; }
+      section.team .part-top {
+        padding: 25px; }
+      section.team .boxes .box {
+        width: 33%; } }
+  @media only screen and (max-width: 800px) {
+    section.team .part-top {
+      padding: 15px; }
+      section.team .part-top .title {
+        font-size: 28px; }
+      section.team .part-top .subtitle {
+        font-size: 15px; }
+    section.team .part-bottom {
+      padding: 25px; }
+    section.team .boxes {
+      margin: -5px; }
+      section.team .boxes .box {
+        padding: 5px;
+        width: 100%; }
+        section.team .boxes .box .caption {
+          padding: 0 10px; }
+          section.team .boxes .box .caption .title {
+            font-size: 15px;
+            margin-top: 2%; } }
+
+/* --------------------- /Section team ---------------------- */
 @font-face {
   font-family: star;
   src: url(../../../../../plugins/woocommerce/assets/fonts/star.eot);

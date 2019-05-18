@@ -847,3 +847,200 @@ section.product-single {
 }
 
 /* ---------------------- /Section product-single ---------------------- */
+
+/* ---------------------- Section pteam ---------------------- */
+section.team {
+	padding-top: 100px;
+	padding-bottom: 80px;
+	.part-top {
+		text-align: center;
+		border: 5px solid #e9c37b;
+		border-bottom: none;
+		max-width: 1233px;
+		margin: auto;
+		padding: 45px;
+		.title {
+			@include f-xb;
+			font-size: 32px;
+			color: #333333;
+		}
+		.subtitle {
+			@include f-r;
+			font-size: 17px;
+			color: #231f20;
+		}
+	}
+
+	.part-bottom {
+		text-align: center;
+		border: 5px solid #e9c37b;
+		border-top: none;
+		max-width: 1233px;
+		margin: auto;
+		padding: 45px;
+		position: relative;
+
+		.button {
+			display: inline-block;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: -30px;
+			@include f-b;
+			font-size: 17px;
+			color: #fff;
+			background: #2c2c2c;
+			padding: 15px 25px;
+
+			transition: 0.5s;
+			&:hover {
+				color: #eac682;
+			}
+		}
+	
+	}
+
+	.boxes {
+		display: flex;
+		flex-wrap: wrap;
+		font-size: 0;
+		margin: -30px;
+		.box {
+			width: 33.33%;
+
+			margin: 0;
+			padding: 30px;
+			display: block;
+			position: relative;
+			overflow: hidden;
+			.inner {
+				overflow: hidden;
+				position: relative;
+			}
+			.image {
+				padding-bottom: 100%;
+				overflow: hidden;
+				width: 100%;
+				img {
+					position: absolute;
+					width: 100%;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+
+			.caption {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				opacity: 0;
+				background: rgba(44,44,44,0.9);
+				padding: 0 40px;
+				
+				transition: 0.5s;
+				
+				.title {
+					@include f-xb;
+					font-size: 24px;
+					color: #ebc782;
+					margin-top: 30%;
+					transition: 0.5s;
+
+					position: relative;
+				}
+
+				.short {
+					@include f-r;
+					font-size: 18px;
+					line-height: 22px;
+					color: #fff;
+					margin-top: 5px;
+					transition: 0.5s;
+					margin-top: 15px;
+				}
+				
+			}
+
+			&:hover {
+				.caption {
+					opacity: 1;
+					.title {
+						margin-top: 20%;
+					}
+					.short {
+						opacity: 1;
+						margin-top: 10px;
+					}
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width : 1300px) {
+		padding-bottom: 30px;
+		padding-top: 50px;
+		.boxes {
+			margin: -8px;
+			.box {
+				padding: 8px;
+				.caption {
+					padding: 0 20px;
+					.title {
+						font-size: 20px;
+						margin-top: 2%;
+					}
+					.short {
+						font-size: 16px;
+						line-height: 18px;
+					}
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width : 1000px) {
+		padding-top: 35px;
+		.part-top {
+			padding: 25px;
+		}
+
+		.boxes {
+			.box {
+				width: 33%;
+			}
+		}
+	}
+
+	@media only screen and (max-width : 800px) {
+
+		.part-top {
+			padding: 15px;
+				.title {
+				font-size: 28px;
+			}
+			.subtitle {
+				font-size: 15px;
+			}
+		}
+		.part-bottom {
+			padding: 25px;
+		}
+		.boxes {
+			margin: -5px;
+			.box {
+				padding: 5px;
+				width: 100%;
+				.caption {
+					padding: 0 10px;
+					.title {
+						font-size: 15px;
+						margin-top: 2%;
+					}
+				}
+			}
+		}
+	}
+}
+/* --------------------- /Section team ---------------------- */
